@@ -1,0 +1,62 @@
+.Card {
+    display: flex;
+    align-items: center;
+    min-height: 250px;
+}
+
+.Card_bottom {
+    display: flex;
+    max-height: 47px;
+}
+
+.Card_del {
+    display: flex;
+    padding: 0;
+    gap: 4px;
+    flex-direction: row;
+    opacity: 0.3;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+    transition: opacity 0.15s ease-out;
+    user-select: none;
+    cursor: pointer;
+}
+
+.Card_del:active {
+    opacity: 1;
+  }
+  
+  @media (hover: hover) {
+    .Card_del:hover {
+      opacity: 1;
+    }
+  }
+
+.Card_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.Card_text {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Card_title {
+    margin-bottom: 10px;
+}
+
+.Card_price {
+    font-size: 25px;
+}
+
+
+@media(max-width: 1050px) {
+    .Card{
+        flex-direction: column;
+    }
+
+}
